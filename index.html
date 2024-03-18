@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
+<!-- BOOTSTRAP & CSS LINKING -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
     <link re="stylesheet" href="./assets/css/reset.css"/>
     <link rel="stylesheet" href="./assets/css/style.css" />
 
-  
-    <title>Weather Watchers</title>
+<!-- WEBSITE TITLE -->   
+    <title>Weather App</title>
 </head>
 
 <body>
-
+<!-- HEADER -->
     <header class="bg-dark"> 
-        <h1 class="p-2 text-light text-center h1">The Weather Watchers</h1>
+        <h1 class="p-2 text-light text-center h1">The Weather App</h1>
     </header>
 
-
+<!-- MAIN SECTION SETTINGS USING BOOTSRAP -->
     <div class="m-5 p-5">
         <div class="col-md-12">
             <div class="row">
 
-
+<!-- SEARCH FOR CITY SECTION -->
     <div class="col-md-3">
         <h5>Search for a City:</h5>
             <form class="form-inline" id="search-form">
@@ -33,11 +33,11 @@
                 <button type="submit" class="btn btn-primary mb-3"><span class="oi oi-magnifying-glass"></span></button>
             </form>
 
-
+<!-- SEARCH HISTORY-->
          <ul class="list-group" id="search-history"></ul>
     </div>
 
-
+<!-- WEATHER DATA FOR THE SELECTED SEARCHED CITY FOR "TODAYS DATE" -->
     <div class="col-md-9">
     <div class="card mt-2 bg-info">
     <div class="card-body">
@@ -49,17 +49,17 @@
     </div>  
     </div>
                     
-
+<!-- 5 DAY FORCAST SECTION -->
     <div> <h3 class="card-title mt-3 ">5-Day Forecast</h3></div>
     <div class="row justify-content-between  " id="five-day"></div>
 
-           
+<!-- DATA COMPLETED BY WEATHERDISPLAY() -->            
                 </div>
             </div>
         </div>
     </div>
     
-
+<!-- JAVASCRIPT FOR JQUERY AND DAYJS LINKING -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
     <script src="./assets/js/script.js"></script>
